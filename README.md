@@ -10,8 +10,12 @@ In 2017, all the stocks had positive return except for stock "TERP". "DQ" had th
 In 2018, only ENPH and RUN had positive return of 81.9% and 84.0% respectively. The volume for ENPH was 604,473,500 and volume for RUN was 502,757,100. These two stocks outperformed than other stocks with larger volume during the year.  
 
 The execution time for the original code is 1.308594 for 2017 and 1.308594 for 2018.
-Whereas the execution time for the refactored script is 0.XXXXXXXXXX for 2017 and 0.XXXXXXXXXXX for 2018.
+![](/Run%20time%20for%202017.png)
+![](/Run%20time%20for%202018.png)
 
+Whereas the execution time for the refactored script is 0.2578125 for 2017 and 0.2578125 for 2018.
+![](/Run%20time%20for%202017%20using%20refactoring.png)
+![](/Run%20time%20for%202018%20using%20refactoring.png)
 
 
 ##Summary: In a summary statement, address the following questions.
