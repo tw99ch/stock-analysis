@@ -82,7 +82,9 @@ Whereas the execution time for the refactored script is 0.2578125 for 2017 and 0
         
         
     Next i
-    
+ 
+ Please refer to the gitHub file for work performed (https://github.com/tw99ch/stock-analysis/blob/master/VBA_Challenge.xlsm)
+ 
 
 ## Summary: In a summary statement, address the following questions.
 1. What are the advantages or disadvantages of refactoring code?
