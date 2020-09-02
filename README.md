@@ -20,7 +20,7 @@ Whereas the execution time for the refactored script is 0.2578125 for 2017 and 0
 ![](/Run%20time%20for%202018%20using%20refactoring.png)
 
 
-##Summary: In a summary statement, address the following questions.
+## Summary: In a summary statement, address the following questions.
 1. What are the advantages or disadvantages of refactoring code?
 The advantages of the refactoring code is that the script can be executed in shorter time. However, the disadvantages is that the refactoring code is more completed than the original code. If you are not completely understanding the pattern of the script, there is more likely to have an error while writing the refactoring code.
 2. How do these pros and cons apply to refactoring the original VBA script?
