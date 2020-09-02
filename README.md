@@ -2,7 +2,7 @@
 
 ## Explain the purpose of this analysis.
 
-The purpsoe of this analysis is to helping client to obtain the summarized data for each stock based on total valume and annual return
+The purpose of this analysis is to helping client to obtain the summarized data for each stock based on total volume and annual return
 
 ## Results:
 In 2017, all the stocks had positive return except for stock "TERP". "DQ" had the greatest return of 199.4% in 2017 with yearly volume of 35,706,200. There is no correlation between return and volume in 2017.
