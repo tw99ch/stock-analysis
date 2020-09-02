@@ -18,7 +18,70 @@ Whereas the execution time for the refactored script is 0.2578125 for 2017 and 0
 
 ![](/Run%20time%20for%202017%20using%20refactoring.png)
 ![](/Run%20time%20for%202018%20using%20refactoring.png)
+'1a) Create a ticker Index
+    Dim tickerIndex As Integer
 
+    '1b) Create three output arrays
+    Dim tickerVolumes(12) As Long
+    Dim tickerStartingPrices(12) As Single
+    Dim tickerEndingPrices(12) As Single
+    
+    ''2a) Create a for loop to initialize the tickerVolumes to zero.
+    ' If the next rowâ€™s ticker doesnâ€™t match, increase the tickerIndex.
+    For i = 0 To 11
+        tickerVolumes(i) = 0
+    Next i
+        
+    ''2b) Loop over all the rows in the spreadsheet.
+    For i = 2 To RowCount
+    
+        If Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
+        tickerIndex = 0
+        ElseIf Cells(i, 1).Value <> Cells(i - 1, 1).Value Then
+        tickerIndex = tickerIndex + 1
+        
+        End If
+        
+        
+        '3a) Increase volume for current ticker
+        If Cells(i, 1).Value = tickers(tickerIndex) Then
+        tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+        End If
+
+        
+        '3b) Check if the current row is the first row with the selected tickerIndex.
+        'If  Then
+        If Cells(i - 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
+        tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
+            
+            
+        'End If
+        End If
+        '3c) check if the current row is the last row with the selected ticker
+        'If  Then
+        If Cells(i, 1).Value = tickers(tickerIndex) Then
+        tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+            
+
+            '3d Increase the tickerIndex.
+            
+            
+        'End If
+        End If
+    Next i
+    
+    '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
+    For i = 0 To 11
+        
+        Worksheets("All Stocks Analysis").Activate
+        tickerIndex = i
+        Cells(4 + i, 1).Value = tickers(tickerIndex)
+        Cells(4 + i, 2).Value = tickerVolumes(tickerIndex)
+        Cells(4 + i, 3).Value = tickerEndingPrices(tickerIndex) / tickerStartingPrices(tickerIndex) - 1
+        
+        
+    Next i
+    
 
 ## Summary: In a summary statement, address the following questions.
 1. What are the advantages or disadvantages of refactoring code?
