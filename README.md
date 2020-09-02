@@ -19,7 +19,8 @@ Whereas the execution time for the refactored script is 0.2578125 for 2017 and 0
 ![](/Run%20time%20for%202017%20using%20refactoring.png)
 ![](/Run%20time%20for%202018%20using%20refactoring.png)
 
-'1a) Create a ticker Index
+ Codes for the challenge are as below:   
+    '1a) Create a ticker Index
     Dim tickerIndex As Integer
 
     '1b) Create three output arrays
